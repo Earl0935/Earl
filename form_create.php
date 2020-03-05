@@ -1,6 +1,5 @@
 <?php
 	$id = $_GET['id'];
-
 	$json = file_get_contents('http://rdapi.herokuapp.com/product/read_one.php?id=' . $id);
         $data = json_decode($json, true);
 	//category
@@ -11,9 +10,9 @@
 
 <form action="pro_create.php" method="POST">
 <h1> Create Product </h1>
-<input type="text" name="name" value="<?php if($id) echo $data['name']" placeholder="name"/>
-<input type="text" name="description" value="<?php if($id) echo $data['description']" placeholder="description"/>
-<input type="text" name="price" value="<?php if($id) echo $data['price']" placeholder="price"/>
+<input type="text" name="name" value="<?php if($id) echo $data['name']?>" placeholder="name"/>
+<input type="text" name="description" value="<?php if($id) echo $data['description']?>" placeholder="description"/>
+<input type="text" name="price" value="<?php if($id) echo $data['price']?>" placeholder="price"/>
 <select name="category">
 <option value="">--Category--</option>
 	<?php
