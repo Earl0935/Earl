@@ -39,7 +39,7 @@ foreach($list as $value){
     ?>
     <tr>
         <td><?php echo $value['id'];?></td>
-        <td><a href="product-details.php?id=<?php echo $value['id'];?>"><?php echo $value['name'];?></a></td>
+        <td><a href="?p=preview&id=<?php echo $value['id'];?>"><?php echo $value['name'];?></a></td>
         <td><?php echo $value['price'];?></td>
 		<td><?php echo $value['category_name'];?></td>
     </tr>
