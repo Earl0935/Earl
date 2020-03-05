@@ -18,7 +18,7 @@
 	<?php
       foreach($category as $cview){
     ?>
-		<option value="<?php echo $cview['id']?>" <?php if ($category['id'] == $data['category_id']) echo "selected" ?>><?php echo $cview['name']?></option>
+		<option value="<?php echo $cview['id']?>" <?php if ($cview['id'] == $data['category_id']) echo "selected" ?>><?php echo $cview['name']?></option>
     <?php
       }
     ?>
