@@ -9,6 +9,10 @@ switch($_GET['p']) {
     include("form_create.php");
     break;
     
+  case 'remove':
+    include("pro_delete.php");
+    break;
+    
   case 'preview':
     include("product-details.php");
     break;
